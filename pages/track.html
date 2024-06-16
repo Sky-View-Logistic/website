@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order - Sky View Logistic</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link to external CSS for global styles -->
+    <style>
+        /* Additional styles for Track Order page */
+
+        /* Override header styles from style.css */
+        header {
+            background-color: white; /* White background */
+            color: black; /* Black text */
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-right nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .header-right nav ul li a {
+            color: black; /* Black text */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-right nav ul li a:hover {
+            color: red; /* Red text on hover */
+        }
+
+        /* Reset and basic styles */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black; /* Black text */
+            background-color: black; /* Light gray background */
+        }
+
+        .container {
+            max-width: 800px; /* Adjust as needed */
+            margin: 20px auto;
+            background-color: white; /* White background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: black; /* Black text */
+        }
+
+        .container p {
+            margin-bottom: 20px;
+        }
+
+        /* Track Order Form */
+
+        #track-order-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #track-order-form label {
+            margin-bottom: 10px;
+            color: black; /* Black text */
+        }
+
+        #track-order-form input[type="text"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        #track-order-form button[type="submit"] {
+            padding: 12px 24px;
+            background-color: red; /* Red button */
+            border: none;
+            color: white; /* White text */
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #track-order-form button[type="submit"]:hover {
+            background-color: darkred; /* Darker red on hover */
+        }
+
+        /* Footer styles */
+
+        footer {
+            background-color: transparent; /* Transparent background */
+            color: white; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px; /* Ensure space from content */
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        footer nav ul li a {
+            color: white; /* White text */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer nav ul li a:hover {
+            color: red; /* Red text on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo1.png" alt="Sky View Logistic">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="track.html">Track Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content for Track Order page -->
+    <section class="container">
+        <h1>Track Your Order</h1>
+        <p>Enter your tracking number below to check the status of your order.</p>
+
+        <form id="track-order-form" action="submit-track.php" method="POST">
+            <label for="tracking-number">Tracking Number:</label>
+            <input type="text" id="tracking-number" name="tracking-number" required>
+
+            <button type="submit">Track Order</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="offices.html">Our Offices</a></li>
+                <li><a href="quote.html">Request Quote</a></li>
+                <li><a href="track.html">Track Order</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Sky View Logistic</p>
+    </footer>
+</body>
+
+</html>

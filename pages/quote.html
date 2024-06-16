@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Quote - Sky View Logistic</title>
+    <style>
+        /* Reset and basic styles */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+
+        .container {
+            max-width: 800px; /* Adjust as needed */
+            margin: 20px auto;
+            background-color: white; /* White background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333; /* Dark gray text */
+        }
+
+        .container p {
+            margin-bottom: 20px;
+        }
+
+        /* Header styles */
+
+        header {
+            background-color: white; /* White background */
+            color: black; /* Black text */
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            flex: 1; /* Take up remaining space */
+        }
+
+        .logo img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        .header-right {
+            text-align: right; /* Align content to the right */
+        }
+
+        .header-right nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-right nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .header-right nav ul li a {
+            color: black; /* Black text */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .header-right nav ul li a:hover {
+            color: red; /* Red text on hover */
+        }
+
+        /* Request Quote Form */
+
+        #request-quote-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #request-quote-form label {
+            margin-bottom: 10px;
+            color: #333; /* Dark gray text */
+        }
+
+        #request-quote-form input[type="text"],
+        #request-quote-form input[type="email"],
+        #request-quote-form input[type="tel"],
+        #request-quote-form select,
+        #request-quote-form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        #request-quote-form button[type="submit"] {
+            padding: 12px 24px;
+            background-color: red; /* Red button */
+            border: none;
+            color: white; /* White text */
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #request-quote-form button[type="submit"]:hover {
+            background-color: darkred; /* Darker red on hover */
+        }
+
+        /* Footer styles */
+
+        footer {
+            background-color: black; /* Dark background */
+            color: white; /* White text */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px; /* Ensure space from content */
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        footer nav ul li a {
+            color: white; /* White text */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer nav ul li a:hover {
+            color: red; /* Red text on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo1.png" alt="Sky View Logistic">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="track.html">Track Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content for Request Quote page -->
+    <section class="container">
+        <h1>Request a Quote</h1>
+        <p>Fill out the form below and we'll get back to you with a customized quote for your logistic needs.</p>
+
+        <!-- Request Quote Form -->
+        <form id="request-quote-form" action="submit-quote.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="service">Service Needed:</label>
+            <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="Air Freight">Air Freight</option>
+                <option value="Sea Freight">Sea Freight</option>
+                <option value="Warehousing">Warehousing</option>
+                <option value="Customs Brokerage">Customs Brokerage</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="offices.html">Our Offices</a></li>
+                    <li><a href="quote.html">Request Quote</a></li>
+                    <li><a href="track.html">Track Order</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Sky View Logistic</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky View Logistic</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/images/logo1.png" alt="Sky View Logistic">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About Us</a></li>
+                        <li><a href="./pages/contact.html">Contact Us</a></li>
+                        <li><a href="./pages/quote.html">Request Quote</a></li>
+                        <li><a href="./pages/track.html">Track Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home Banner with Overlay Button -->
+    <section id="home-banner">
+        <img src="./assets/images/home-banner3.jpg" alt="Sky View Logistic">
+        <div class="overlay">
+            <h1>Welcome to Sky View Logistic</h1>
+            <button onclick="location.href='track.html'">Track Order</button>
+        </div>
+    </section>
+
+    <!-- Workers Section -->
+    <section id="workers">
+        <div class="worker">
+            <img src="./assets/images/worker1.jpg" alt="Worker 1">
+            <p>Name: <strong>Mike Henry</strong></p>
+            <p>Role: <strong>Inventory Manager</strong></p>
+        </div>
+        <div class="worker">
+            <img src="./assets/images/worker2.jpg" alt="Worker 2">
+            <p>Name: <strong>Mark Bush</strong></p>
+            <p>Role: <strong>Logistics Analyst</strong></p>
+        </div>
+        <div class="worker">
+            <img src="./assets/images/worker3.jpg" alt="Worker 3">
+            <p>Name: <strong>Steve Marcus</strong></p>
+            <p>Role: <strong>Warehousing</strong></p>
+        </div>
+        <div class="worker">
+            <img src="./assets/images/worker4.jpg" alt="Worker 4">
+            <p>Name: <strong>Sarah Williams</strong></p>
+            <p>Role: <strong>Inventory Analyst</strong></p>
+        </div>
+    </section>
+
+    <!-- Additional Image Banner with Left-side Text -->
+    <section class="additional-image" id="image-banner-left">
+        <div class="content">
+            <div class="text">
+                <h2>Contact Us for More Information</h2>
+                <p>We are here to assist you with all your logistic needs.</p>
+                <button onclick="location.href='contact.html'">Contact Us</button>
+            </div>
+            <img src="./assets/images/home-banner1.jpeg" alt="Contact Us">
+        </div>
+    </section>
+
+    <!-- Additional Image Banner with Right-side Text -->
+    <section class="additional-image" id="image-banner-right">
+        <div class="content">
+            <div class="text">
+                <h2>Our Logistics Services</h2>
+                <p>We offer a wide range of logistics solutions to meet your needs.</p>
+                <button onclick="location.href='quote.html'">Get a Quote</button>
+            </div>
+            <img src="./assets/images/home-banner2.jpg" alt="Sky View Logistic Services">
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <div class="review">
+            <p>"Sky View Logistic provided excellent service!" - Customer A</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="review">
+            <p>"Reliable and fast!" - Customer B</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+            </div>
+        </div>
+        <div class="review">
+            <p>"Very professional service!" - Customer C</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <div class="review">
+            <p>"On-time delivery and great communication." - Customer D</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <div class="review">
+            <p>"Impressive logistics solutions!" - Customer E</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+        <div class="review">
+            <p>"Efficient and courteous staff." - Customer F</p>
+            <div class="rating">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span class="star">&#9734;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form for Request Quote -->
+    <section id="contact-form">
+        <div class="container">
+            <h2>Request a Quote</h2>
+            <form action="submit-quote.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="./pages/contact.html">Contact Us</a></li>
+                    <li><a href="./pages/offices.html">Our Offices</a></li>
+                    <li><a href="./pages/quote.html">Request Quote</a></li>
+                    <li><a href="./pages/track.html">Track Order</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Sky View Logistic</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
